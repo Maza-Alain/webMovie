@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{movie.title}}</mat-card-title>
+    </mat-card-header>
+
+    <img mat-card-image src='{{baseUrl}}/{{movie.backdrop_path}}'>
+
+    <mat-card-actions fxLayoutAlign='center'>
+        <button 
+            mat-stroked-button 
+            color='primary'
+            [routerLink]='["/movies", movie.id]'
+        >More info</button>
+    </mat-card-actions>
+</mat-card>

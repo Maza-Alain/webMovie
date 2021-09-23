@@ -1,0 +1,24 @@
+<div
+    fxLayout='row'
+    fxLayout.xs='column'
+    fxLayoutGap='.5rem'
+    fxLayoutAlign='space-between'
+>
+    <div fxFlex='50' >
+        <img src='{{baseUrl}}/{{movie.poster_path}}'>
+    </div>
+
+    <div fxFlex='50' >
+        <h1>{{movie.original_title}}</h1>
+        <small>{{movie.release_date}}</small>
+        <mat-divider></mat-divider>
+        <h2>Overview</h2>
+        <p>{{movie.overview}}</p>
+        <span>Popularity: {{movie.popularity}}</span>
+        <br>
+        <span>Original Language: {{movie.popularity}}</span>
+        <br>
+        <button mat-raised-button [routerLink]='["/movies"]'>Back</button>
+    </div>
+
+</div>

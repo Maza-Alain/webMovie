@@ -1,0 +1,19 @@
+<div
+    fxLayout='row wrap'
+    fxLayout.xs='column' 
+    fxLayoutAlign='center'
+    fxLayoutGap='20px'
+>
+    <div
+        fxFlex='30'
+        fxFlex.lg='20' 
+        fxFlex.sm='40' 
+        *ngFor='let movie of allMovies'
+    >
+        <app-movie-card
+            [movie]='movie'
+        ></app-movie-card>
+
+    </div>
+   
+</div>
